@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#val-box {
+  border-left: 6px solid;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#val-msg {
+  margin: 0 0 10px;
+}
+
+#val-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="datetime-local"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#agregar-foto {
+  background-color: #2196F3;
+}
+
+#agregar-foto:hover {
+  background-color: #1976d2;
+}
+
+#contactar-por {
+  margin-top: 8px;
+}
+
+#contactar-por label {
+  font-weight: normal;
+  display: block;
+  margin: 3px 0;
+}
+
+#extra-contacto-container {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f5f5f5;
+}
+
+#extra-contacto-container div {
+  margin-bottom: 10px;
+}
+
+#extra-contacto-container label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+#fotos-container input[type="file"] {
+  display: block;
+  margin: 6px 0;
+}

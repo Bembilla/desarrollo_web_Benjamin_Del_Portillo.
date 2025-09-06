@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">    
+<head>
+  <meta charset="UTF-8">
+  <title>Adopcion</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/aviso.css">
+</head>
+<body>
+  <div class="main-container">
+    <div id="val-box" hidden>
+      <h2 id="val-msg"></h2>
+      <ul id="val-list"></ul>
+    </div>
+    <form name="myForm" method="post" enctype="multipart/form-data">
+      <label for="seleccionar-region">Región</label>
+      <select name="seleccionar-region" id="seleccionar-region" required>
+        <option value="">Seleccione una región</option>
+      </select><br>
+
+      <label for="seleccionar-comuna">Comuna</label>
+      <select name="seleccionar-comuna" id="seleccionar-comuna" required>
+        <option value="">Seleccione una comuna</option>
+      </select><br>
+
+      <label for="sector">Sector(opcional)</label>
+      <input type="text" name="sector" id="sector" maxlength="100"><br>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" minlength="3" maxlength="200" required><br>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" maxlength="100" required><br>
+
+      <label for="celu">Telefono</label>
+      <input type="tel" name="celu" id="celu" pattern="^\+\d{1,3}\.\d{8,12}$" placeholder="+569.12345678"><br>
+
+      <label>Contactar por (opcional, máximo 5)</label>
+      <div id="contactar-por">
+        <label><input type="checkbox" name="contactar-por" value="whatsapp"> WhatsApp</label><br>
+        <label><input type="checkbox" name="contactar-por" value="telegram"> Telegram</label><br>
+        <label><input type="checkbox" name="contactar-por" value="x"> X</label><br>
+        <label><input type="checkbox" name="contactar-por" value="instagram"> Instagram</label><br>
+        <label><input type="checkbox" name="contactar-por" value="tiktok"> TikTok</label><br>
+        <label><input type="checkbox" name="contactar-por" value="otra"> Otra</label><br>
+      </div>
+
+      <div id="extra-contacto-container" style="display:none;"></div>
+
+      <label for="tipo">Tipo</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="gato">Gato</option>
+        <option value="perro">Perro</option>
+      </select><br>
+
+      <label for="cantidad">Cantidad</label>
+      <input type="number" name="cantidad" id="cantidad" min="1" required><br>
+
+      <label for="edad">Edad</label>
+      <input type="number" name="edad" id="edad" min="1" required><br>
+
+      <label for="unidad-medida-edad">Unidad de medida de la edad</label>
+      <select name="unidad-medida-edad" id="unidad-medida-edad" required>
+        <option value="">Seleccione</option>
+        <option value="meses">Meses</option>
+        <option value="años">Años</option>
+      </select><br>
+
+      <label for="fechaDisponible">Fecha disponible para la entrega</label>
+      <input type="datetime-local" name="fechaDisponible" id="fechaDisponible" required><br>
+
+      <label for="descripcion">Descripción (opcional)</label>
+      <textarea name="descripcion" id="descripcion" rows="10" cols="50"></textarea>
+
+      <div id="fotos-container">
+        <input type="file" name="foto[]" accept="image/*" class="foto-input">
+      </div>
+      <button type="button" id="agregar-foto">Agregar otra foto</button><br>
+
+      <button id="submit-btn" type="button">Agregar este aviso de adopción</button>
+    </form>
+  </div>
+  <script src="../JS/seleccion.js"></script>
+  <script src="../JS/validacion.js"></script>
+</body>
+</html>
